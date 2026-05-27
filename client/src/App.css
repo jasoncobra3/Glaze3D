@@ -1,0 +1,117 @@
+.app-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* App Header Nav styling */
+.app-header {
+  width: 100%;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-header {
+    background-color: rgba(22, 23, 29, 0.8);
+  }
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-h);
+  transition: opacity 0.2s ease;
+}
+
+.nav-logo-link:hover {
+  opacity: 0.9;
+}
+
+.nav-logo-icon {
+  width: 26px;
+  height: 26px;
+  color: var(--accent);
+}
+
+.nav-title {
+  font-family: var(--heading);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+/* Editor Placeholder View styling */
+.editor-placeholder {
+  max-width: 600px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 45px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.editor-placeholder h1 {
+  font-size: 38px;
+  letter-spacing: -1.2px;
+  margin: 0 0 10px 0;
+  color: var(--text-h);
+}
+
+.editor-subtitle {
+  color: var(--text);
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.editor-subtitle code {
+  color: var(--accent);
+  background: var(--accent-bg);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.editor-back-box {
+  margin-top: 20px;
+}
+
+.back-btn {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  box-shadow: none;
+}
+
+.back-btn:hover {
+  background: var(--border);
+  transform: translateY(-1px);
+}
